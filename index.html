@@ -1,0 +1,184 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title></title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+
+ 
+ 	<style>
+  #bug{
+    top:0;
+    position:absolute;
+    height:50px;
+    width:50px;
+  }
+  html{
+    overflow:hidden;
+  }
+  .lamp{
+  position: absolute;
+    width: 20%;
+    height: 10%;
+    margin-left: 26%;
+    margin-top: 23%;
+    z-index: 1000;
+}
+
+  }
+  .lamp:hover{
+   
+  }
+  .highlight{
+    opacity:.8;
+    filter: blur(1px);
+  -webkit-filter: blur(1px);
+ height:100%;
+ -webkit-filter: brightness(1.3);
+  filter: brightness(1.3);
+
+  right: 0px;
+  z-index: 1;
+  }
+ 	/*.body{
+ 		max-width:70%;
+ 	}
+ 	.start{
+ 		font-size:2em;
+ 		text-align:center;
+ 		margin-top:200px;
+ 	}
+ 	.secretpopout{
+ 		display:none;
+ 		text-align:center;
+ 		font-size:1.5em;
+ 	}
+ 	.enter{
+ 		
+ 		text-align:center;
+ 		font-size:1.8em;
+ 		color:coral;
+    float:left;
+    margin-left:60px;
+    margin-top:200px;
+
+ 	}
+  .enter2{
+    
+    text-align:center;
+    font-size:1.8em;
+    color:coral;
+    float:left;
+    margin-left:650px;
+    margin-top:200px;
+
+  }
+  .home{
+    background-image:url('hosue.png');
+    background-size:cover;
+    position:relative;
+    height:800px;
+    top:-1000!important;
+  }*/
+
+ 	</style>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<div class="home">
+  
+<div class="background" style="
+background-image:url('hosue.gif');
+background-size: 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -2px;
+    left: -1px;
+    background-repeat: no-repeat;">
+
+
+<a class="pg2"  style="margin-left: 50%;
+    margin-top: 8%;
+    height: 30%;
+    width: 100px;
+    position: absolute;"href="pg3.html"><div style="margin-top:60px; margin-left:550px; height:400px; width:180px; position:fixed;" class="enter">
+	
+</div></a>
+<a class="pg3" href="pg2.html" style="
+    height: 15%;
+    margin-top: 15%;
+    margin-left: 5%;
+    width: 15%;
+    position: absolute;
+">
+<div class="enter2" style="height:130px;width:120px; margin-left:50px; margin-top:150px; position:fixed;">
+ 
+</div></a>
+
+<audio style="display:none;" controls autoplay>
+  <source src="lroom.wav">
+    
+
+</audio>
+<a href="#"><div class="lamp">
+    </div></a>
+<div id="bug">
+  <img style="height:50px; width:50px;"src="bug.gif">
+</div>
+
+
+</body>
+
+<script>
+<!--
+function getStylesheet() {
+      var currentTime = new Date().getHours();
+      if (0 <= currentTime&&currentTime < 5) {
+        document.write("<link rel='stylesheet' href='night1.css' type='text/css'>");
+      
+      }
+      if (5 <= currentTime&&currentTime < 11) {
+       var items = ['earlynoon1.css'];
+        var item = items[Math.floor(Math.random()*items.length)];
+      $("head").append("<link rel='stylesheet' href='" + item + "' type='text/css' media='screen'>");
+      }
+      if (11 <= currentTime&&currentTime < 14) {
+       var items = ['noon1.css'];
+        var item = items[Math.floor(Math.random()*items.length)];
+      $("head").append("<link rel='stylesheet' href='" + item + "' type='text/css' media='screen'>");
+      }
+      if (14 <= currentTime&&currentTime < 19) {
+       var items = ['afternoon1.css'];
+   var item = items[Math.floor(Math.random()*items.length)];
+   $("head").append("<link rel='stylesheet' href='" + item + "' type='text/css' media='screen'>");
+      }
+      if (19 <= currentTime&&currentTime <= 24) {
+       var items = ['night1.css'];
+   var item = items[Math.floor(Math.random()*items.length)];
+   $("head").append("<link rel='stylesheet' href='" + item + "' type='text/css' media='screen'>");
+      }
+}
+
+getStylesheet();
+$( ".lamp" ).click(function() {
+  $( "body" ).toggleClass( "highlight" );
+});
+$(document).mousemove(function(e) {
+    
+        $("#bug").stop(1000).animate({left:e.pageX-200, top:e.pageY-200});
+   
+});
+
+-->
+</script>
+
+</div>
+</html>

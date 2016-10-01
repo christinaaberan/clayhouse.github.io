@@ -1,0 +1,14 @@
+body{
+
+ -webkit-filter: brightness(30%) !important; /* Chrome, Safari, Opera */
+    filter: brightness(30%)!important;
+    filter: hue-rotate(20deg)!important;
+    -webkit-filter: hue-rotate(290deg)!important;
+    }
+    .background{
+
+ -webkit-filter: brightness(30%) !important; /* Chrome, Safari, Opera */
+    filter: brightness(30%)!important;
+    filter: hue-rotate(20deg)!important;
+    -webkit-filter: hue-rotate(190deg)!important;
+    }
