@@ -57,21 +57,12 @@
     
 }
 
-    .vid{
-        position: relative;
-    
-        
-   left:-10%;
-   top:-3%!important;
-   
-   
-    z-index:-111;
-    
-    
-    background-size:cover;
-    background-repeat:no-repeat;
-   
-    
-    background-image:url('laterocean.gif');
-   
-    }
+.vid{
+    position: relative;
+    z-index: -111;
+    top: 20%;
+    height: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(laterocean.gif);
+}
